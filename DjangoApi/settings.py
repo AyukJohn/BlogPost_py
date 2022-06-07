@@ -94,10 +94,12 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
-# CORS_ALLOWED_ORIGINS = [
-#     ' http://127.0.0.1:8000',
-# ]
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = [
+    # ' http://127.0.0.1:8000',
+    "https://dzblog.herokuapp.com"
+    'https://dzblog.netlify.app'
+]
+# CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'DjangoApi.urls'
 
@@ -133,15 +135,15 @@ REST_FRAMEWORK = {
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':  os.path.join(BASE_DIR, 'db.sqlite3'),
         # 'ENGINE': 'django.db.backends.mysql',
         # 'NAME': 'test',
         # 'USER': 'root',
         # 'PASSWORD': '',
         # 'HOST': '127.0.0.1',
         # 'PORT': '3306',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
     }
 }
 
