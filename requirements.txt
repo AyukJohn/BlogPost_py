@@ -8,3 +8,4 @@ python-decouple==3.4
 django-rest-knox==4.1.0
 djangorestframework==3.12.4
 django-cors-headers==3.11.0
+Pillow==7.0.0
