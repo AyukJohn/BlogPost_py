@@ -25,8 +25,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-+(_j!u^r#pu3rn1c66904ez2)2j3j&zv^do1i#3akab@0codbo'
-SECRET_KEY = key
+SECRET_KEY = 'django-insecure-+(_j!u^r#pu3rn1c66904ez2)2j3j&zv^do1i#3akab@0codbo'
+# SECRET_KEY = 
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -74,27 +74,27 @@ MIDDLEWARE = [
 # CORS_ALLOWED_ORIGINS = [
 #     '127.0.0.1:8000',
 # ]
-CORS_ALLOW_METHODS = [
-    "DELETE",
-    "GET",
-    "OPTIONS",
-    "PATCH",
-    "POST",
-    "PUT",
-]
-CORS_ALLOW_HEADERS = [
-    "accept",
-    "accept-encoding",
-    "authorization",
-    "content-type",
-    "dnt",
-    "origin",
-    "user-agent",
-    "x-csrftoken",
-    "x-requested-with",
-]
+# CORS_ALLOW_METHODS = [
+#     "DELETE",
+#     "GET",
+#     "OPTIONS",
+#     "PATCH",
+#     "POST",
+#     "PUT",
+# ]
+# CORS_ALLOW_HEADERS = [
+#     "accept",
+#     "accept-encoding",
+#     "authorization",
+#     "content-type",
+#     "dnt",
+#     "origin",
+#     "user-agent",
+#     "x-csrftoken",
+#     "x-requested-with",
+# ]
 
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True
 # CORS_ALLOWED_ORIGINS = [
 #     # ' http://127.0.0.1:8000',
 #     "https://dzblog.herokuapp.com"
